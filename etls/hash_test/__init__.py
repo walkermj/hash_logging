@@ -10,8 +10,8 @@ def RunHash(source_session_factory, dest_session_factory, etl):
 
     # use session factories to get the sessions needed for this etl
     db_sessions = {
-        "source_session": "source_session_factory()",
-        "dest_session": "dest_session_factory()",
+        "source_session": source_session_factory(),
+        "dest_session": dest_session_factory(),
     }
 
     # ask etl for its graph of functions to run

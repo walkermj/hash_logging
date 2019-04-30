@@ -21,7 +21,7 @@ class perfTest(object):
 
     class RunHashingStage(object):
 
-        def table_hash_process(self):
+        def RunHashTest(self):
             hash_test.RunHashingStage()
 
 # Python Fire looks at the PMI class and builds a command line interface
